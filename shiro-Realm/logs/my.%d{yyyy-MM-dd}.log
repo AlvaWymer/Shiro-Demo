@@ -1,0 +1,45 @@
+2017-05-17 23:16:07,052 INFO [org.apache.shiro.config.IniSecurityManagerFactory] - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+2017-05-17 23:16:07,281 ERROR [org.apache.shiro.realm.jdbc.JdbcRealm] - There was a SQL error while authenticating user [mermaid]
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:998)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3835)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3771)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:870)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1659)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1206)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2239)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.mysql.jdbc.jdbc2.optional.MysqlDataSource.getConnection(MysqlDataSource.java:422)
+	at com.mysql.jdbc.jdbc2.optional.MysqlDataSource.getConnection(MysqlDataSource.java:134)
+	at com.mysql.jdbc.jdbc2.optional.MysqlDataSource.getConnection(MysqlDataSource.java:105)
+	at org.apache.shiro.realm.jdbc.JdbcRealm.doGetAuthenticationInfo(JdbcRealm.java:215)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:568)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:267)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:270)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:256)
+	at cn.mldn.shiro.base.TestShiro.main(TestShiro.java:26)
+2017-05-17 23:16:34,853 INFO [org.apache.shiro.config.IniSecurityManagerFactory] - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+2017-05-17 23:19:05,413 INFO [org.apache.shiro.config.IniSecurityManagerFactory] - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+2017-05-17 23:19:20,086 INFO [org.apache.shiro.config.IniSecurityManagerFactory] - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+2017-05-17 23:19:20,373 INFO [org.apache.shiro.session.mgt.AbstractValidatingSessionManager] - Enabling session validation scheduler...
+2017-05-17 23:21:02,390 INFO [org.apache.shiro.config.IniSecurityManagerFactory] - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+2017-05-17 23:21:02,654 INFO [org.apache.shiro.session.mgt.AbstractValidatingSessionManager] - Enabling session validation scheduler...
+2017-05-17 23:43:47,940 INFO [org.apache.shiro.config.IniSecurityManagerFactory] - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+2017-05-17 23:44:06,806 INFO [org.apache.shiro.config.IniSecurityManagerFactory] - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+2017-05-17 23:44:07,072 INFO [org.apache.shiro.session.mgt.AbstractValidatingSessionManager] - Enabling session validation scheduler...
+2017-05-17 23:46:01,032 INFO [org.apache.shiro.config.IniSecurityManagerFactory] - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+2017-05-17 23:46:01,305 INFO [org.apache.shiro.session.mgt.AbstractValidatingSessionManager] - Enabling session validation scheduler...
+2017-05-17 23:46:09,343 INFO [org.apache.shiro.config.IniSecurityManagerFactory] - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
